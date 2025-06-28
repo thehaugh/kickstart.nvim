@@ -55,10 +55,6 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-vim.o.expandtab = true
-vim.o.shiftwidth = 2
-vim.o.tabstop = 2
-
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
@@ -83,4 +79,13 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+
+-- ##### PERSONAL ADDITIONS #####
+
+-- vertical ruler for long lines
 vim.o.colorcolumn = '121'
+
+-- Without these typescript spacing was not right. Better to understand why.
+vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
